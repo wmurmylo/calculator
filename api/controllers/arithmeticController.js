@@ -11,6 +11,7 @@ exports.calculate = function(req, res) {
   });
 
   var operations = {
+  // using + operator to type cast variables as inegers in order to prevent string concatenation
     'add':      function(a,b) { return +a + +b },
     'subtract': function(a,b) { return a - b },
     'multiply': function(a,b) { return a * b },
